@@ -51,7 +51,7 @@
             "is_enabled": true,
             "request_url": "https://99b5-2601-646-4380-66e0-4da4-9994-1e86-2e5b.ngrok.io/slack/events"
         },
-        "org_deploy_enabled": false,
+        "org_deploy_enabled": true,
         "socket_mode_enabled": false,
         "token_rotation_enabled": false
     }
