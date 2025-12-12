@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@slack/bolt": "^3.8.1",
-    "dotenv": "^10.0.0",
+    "dotenv": "^17.2.3",
     "eslint-config-airbnb": "^19.0.4",
     "mongoose": "^6.2.0",
     "ngrok": "^4.3.0"
