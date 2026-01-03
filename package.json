@@ -22,7 +22,7 @@
     "url": "https://github.com/slack-samples/bolt-js-slack-connect/issues"
   },
   "dependencies": {
-    "@slack/bolt": "^3.8.1",
+    "@slack/bolt": "^4.6.0",
     "dotenv": "^17.2.3",
     "eslint-config-airbnb": "^19.0.4",
     "mongoose": "^6.2.0",
