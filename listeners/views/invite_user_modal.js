@@ -89,9 +89,9 @@ const inviteUserBlock = async () => {
       text: {
         type: 'mrkdwn',
         text:
-          '*Pick a type of invite.* \n Normal means that this member can add'
-          + 'members of their own workspace to the channel.'
-          + 'Limited is, well, the opposite.',
+          '*Pick a type of invite.* \n Normal means that this member can add' +
+          'members of their own workspace to the channel.' +
+          'Limited is, well, the opposite.',
       },
       accessory: {
         type: 'radio_buttons',

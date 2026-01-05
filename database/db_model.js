@@ -14,9 +14,7 @@ const usersSchema = mongoose.Schema(
     appId: String,
     authVersion: String,
     bot: {
-      scopes: [
-        String,
-      ],
+      scopes: [String],
       token: String,
       userId: String,
       id: String,
@@ -37,11 +35,13 @@ const inviteSchema = mongoose.Schema(
       recepient_email: String,
     },
     channel: { id: String, is_private: Boolean, is_im: Boolean, name: String },
-    acceptances: [{
-      approval_status: String,
-      accepting_team: { id: String, name: String },
-      accepting_user: { id: String, team_id: String, name: String },
-    }],
+    acceptances: [
+      {
+        approval_status: String,
+        accepting_team: { id: String, name: String },
+        accepting_user: { id: String, team_id: String, name: String },
+      },
+    ],
     reviews: [{ type: String, reviewing_team: { id: String, name: String } }],
     exp_date: String,
     isIgnored: Boolean,

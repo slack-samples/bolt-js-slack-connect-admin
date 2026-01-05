@@ -4,8 +4,9 @@
   "description": "This project aims to speed up the time to understand & implement automations using Slack Connect APIs.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "lint": "eslint --ext .js ."
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "start": "node app.js"
   },
   "author": "Slack Technologies, LLC",
   "license": "MIT",
@@ -24,13 +25,10 @@
   "dependencies": {
     "@slack/bolt": "^4.6.0",
     "dotenv": "^17.2.3",
-    "eslint-config-airbnb": "^19.0.4",
-    "mongoose": "^9.1.2",
-    "ngrok": "^4.3.3"
+    "mongoose": "^9.1.2"
   },
   "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.32.0"
+    "@biomejs/biome": "^2.3.11",
+    "ngrok": "^4.3.3"
   }
 }

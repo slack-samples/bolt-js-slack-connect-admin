@@ -19,8 +19,8 @@ const app = new App({
   installationStore: {
     storeInstallation: async (installation) => {
       if (
-        installation.isEnterpriseInstall
-        && installation.enterprise !== undefined
+        installation.isEnterpriseInstall &&
+        installation.enterprise !== undefined
       ) {
         return orgInstall.saveUserOrgInstall(installation);
       }
@@ -31,8 +31,8 @@ const app = new App({
     },
     fetchInstallation: async (installQuery) => {
       if (
-        installQuery.isEnterpriseInstall
-        && installQuery.enterpriseId !== undefined
+        installQuery.isEnterpriseInstall &&
+        installQuery.enterpriseId !== undefined
       ) {
         return dbQuery.findUser(installQuery.enterpriseId);
       }

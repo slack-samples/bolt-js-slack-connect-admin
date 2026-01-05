@@ -7,8 +7,9 @@ const disconnectChannelCallback = async ({ ack, view, body, client }) => {
     response_action: 'clear',
   });
   const providedValues = view.state.values;
-  const channel = providedValues.channel_select_block.channels_select_actionID
-    .selected_channel;
+  const channel =
+    providedValues.channel_select_block.channels_select_actionID
+      .selected_channel;
 
   // Grab all users that are on Enterprise Grid.
   const users = await model.User.find({ isEnterpriseInstall: true });
