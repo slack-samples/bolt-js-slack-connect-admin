@@ -5,4 +5,9 @@ const addAcceptBlocks = require('./add_accept_blocks');
 const listInvites = require('./list_invites');
 // const addSectionBlocks = require('./add_section_blocks');
 
-module.exports = { customRoutes, addApproveBlocks, addAcceptBlocks, listInvites };
+module.exports = {
+  customRoutes,
+  addApproveBlocks,
+  addAcceptBlocks,
+  listInvites,
+};

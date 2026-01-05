@@ -10,23 +10,26 @@ const inviteSubmittedCallback = async ({ ack, view, body, client }) => {
     });
 
     const providedValues = view.state.values;
-    const selectedChannel = await providedValues.channel_select_block
-      .channels_select_actionID.selected_channel;
+    const selectedChannel =
+      await providedValues.channel_select_block.channels_select_actionID
+        .selected_channel;
 
     // Set variables based on what user has picked.
     // User can use either email or userID.
     const userID = providedValues.userID_input_block.userID_actionID.value;
     const email = providedValues.email_input_block.email_input_actionID.value;
     // Datepicked is optional
-    const datePicked = providedValues.datepicker_input_block.datepicker_actionID.selected_date;
+    const datePicked =
+      providedValues.datepicker_input_block.datepicker_actionID.selected_date;
 
     let withEmail = true;
     if (!email) {
       withEmail = false;
     }
 
-    let isExternalLimited = await providedValues.is_external_limited_block
-      .this_is_an_action_id.selected_option.value;
+    let isExternalLimited =
+      await providedValues.is_external_limited_block.this_is_an_action_id
+        .selected_option.value;
     if (isExternalLimited === 'Limited') {
       isExternalLimited = true;
     } else {
