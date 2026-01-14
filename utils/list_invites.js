@@ -21,21 +21,21 @@ const listInvites = async (client) => {
   for (let i = 0; i < numInvites; i += 1) {
     const currentInvite = resp.invites[i];
 
-    if (currentInvite.acceptances !== undefined && currentInvite.status !== 'revoked' && currentInvite.status !== 'approved') {
+    if (
+      currentInvite.acceptances !== undefined &&
+      currentInvite.status !== 'revoked' &&
+      currentInvite.status !== 'approved'
+    ) {
       // Do not display any invites which are approved, or rejected.
-      if (currentInvite.acceptances[0].approval_status !== 'approved' && currentInvite.acceptances[0].approval_status !== 'rejected') {
+      if (
+        currentInvite.acceptances[0].approval_status !== 'approved' &&
+        currentInvite.acceptances[0].approval_status !== 'rejected'
+      ) {
         console.log('add approve blocks');
-        addApproveBlocks(
-          inviteBlocks,
-          resp.invites[i],
-          currentInvite,
-        );
+        addApproveBlocks(inviteBlocks, resp.invites[i], currentInvite);
       }
     } else {
-      addAcceptBlocks(
-        inviteBlocks,
-        currentInvite,
-      );
+      addAcceptBlocks(inviteBlocks, currentInvite);
     }
   }
   // Need this to make sure all accept/approve blocks have finished being appended to inviteBlocks.
