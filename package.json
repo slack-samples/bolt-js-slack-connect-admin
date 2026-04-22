@@ -23,7 +23,7 @@
     "url": "https://github.com/slack-samples/bolt-js-slack-connect/issues"
   },
   "dependencies": {
-    "@slack/bolt": "^4.7.0",
+    "@slack/bolt": "^4.7.1",
     "dotenv": "^17.4.2",
     "mongoose": "^9.5.0"
   },
