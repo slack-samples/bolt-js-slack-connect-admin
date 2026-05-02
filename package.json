@@ -28,7 +28,7 @@
     "mongoose": "^9.6.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.13",
+    "@biomejs/biome": "^2.4.14",
     "ngrok": "^4.3.3"
   }
 }
