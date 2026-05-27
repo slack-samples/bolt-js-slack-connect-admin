@@ -20,7 +20,9 @@
       "https://99b5-2601-646-4380-66e0-4da4-9994-1e86-2e5b.ngrok.io/slack/oauth_redirect"
     ],
     "scopes": {
-      "user": ["admin.conversations:write"],
+      "user": [
+        "admin.conversations:write"
+      ],
       "bot": [
         "channels:history",
         "channels:manage",
