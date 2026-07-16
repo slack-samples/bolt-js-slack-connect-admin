@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.4",
+    "@slack/cli-hooks": "^2.0.0",
     "ngrok": "^4.3.3"
   }
 }
