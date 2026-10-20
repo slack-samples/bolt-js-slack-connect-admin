@@ -25,6 +25,46 @@ channels between the same two organizations
 9. [Disconnect the Channel](#step-9-disconnect-the-channel) 
 10. [Conclusion](#conclusion) 
 
+## Claude Code, Codex, Cursor, and Other Coding Agents
+
+Install the [Slack MCP and Skills Plugin](https://docs.slack.dev/ai/slack-skills-plugin/) so your coding agent can create, run, and deploy Slack apps, look up Web API methods and scopes, and build Block Kit without guessing.
+
+### Claude Code
+
+Run this in a Claude Code session:
+
+```
+/plugin install slack@claude-plugins-official
+```
+
+### Codex
+
+Run this in your terminal:
+
+```sh
+codex plugin marketplace add slackapi/slack-skills-plugin
+codex plugin add slack@slack
+```
+
+### Cursor
+
+Run this in a Cursor Agent chat:
+
+```
+/add-plugin slack
+```
+
+### Other agents
+
+Install the skills with `npx skills`, using your [agent's identifier](https://github.com/vercel-labs/skills#supported-agents):
+
+```sh
+npx skills add slackapi/slack-skills-plugin -y -a <agent>
+
+# For example, OpenCode
+npx skills add slackapi/slack-skills-plugin -y -a opencode
+```
+
 ## App Configuration
 
 Before getting started, make sure you have a development workspace where you have permissions to install apps. If you don’t have one setup, go ahead and [create one](https://slack.com/create).
