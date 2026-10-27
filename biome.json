@@ -26,6 +26,11 @@
       "preset": "recommended"
     }
   },
+  "markdown": {
+    "formatter": {
+      "enabled": false
+    }
+  },
   "vcs": {
     "enabled": true,
     "clientKind": "git",
