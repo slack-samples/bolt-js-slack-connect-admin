@@ -82,8 +82,8 @@ Before getting started, make sure you have a development workspace where you hav
 4. Review the configuration and click _Create_
 5. Click _Install to Workspace_ and _Allow_ on the screen that follows. You'll then be redirected to the App Configuration dashboard.
 6. Click on `Manage Distribution` and then make sure all boxes have
-   green check marks. Select `Remove Hard Coded Information`, check the box
-   and then `Activate Public Distribution`.
+green check marks. Select `Remove Hard Coded Information`, check the box
+and then `Activate Public Distribution`.
 
 ![activeDistribution](https://user-images.githubusercontent.com/10428517/155411289-45f63a4f-72dc-40b1-a45e-9fae8d2df673.png)
 
