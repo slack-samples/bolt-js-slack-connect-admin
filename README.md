@@ -9,6 +9,7 @@
 
 This project aims to speed up the time to understand & implement automations with [Slack Connect APIs](https://api.slack.com/apis/connect). This project aims to be the baseline
 on which a few different automations can be built, such as:
+
 - Disconnect channels automatically (based on a date picked at channel creation time)
 - Customize org settings for auto approval to speed up creating multiple
   channels between the same two organizations
@@ -79,17 +80,19 @@ Before getting started, make sure you have a development workspace where you hav
    specific places, as shown in the screenshot below.
 
 ![changeManifest](https://user-images.githubusercontent.com/10428517/155407272-44a2eaf9-e735-453f-a9c7-18c21004a037.png)
+
 4. Review the configuration and click _Create_
 5. Click _Install to Workspace_ and _Allow_ on the screen that follows. You'll then be redirected to the App Configuration dashboard.
 6. Click on `Manage Distribution` and then make sure all boxes have
-green check marks. Select `Remove Hard Coded Information`, check the box
-and then `Activate Public Distribution`.
+   green check marks. Select `Remove Hard Coded Information`, check the box
+   and then `Activate Public Distribution`.
 
 ![activeDistribution](https://user-images.githubusercontent.com/10428517/155411289-45f63a4f-72dc-40b1-a45e-9fae8d2df673.png)
 
 #### Environment Variables
 
 Before you can run the app, you'll need to store some environment variables.
+
 1. Copy `.env.sample` to `.env`
 2. Click _Basic Information_ from the left hand menu. There, in the `App Credentials` you should see your `SLACK_CLIENT_ID`, `SLACK_CLIENT_SECRET`, and `SLACK_SIGNING_SECRET`. Click on `Show` and copy and paste those values into your `.env` file.
 3. This app uses (the free version of) MongoDB. You'll need to provide your MongoDB username, password, and database name in the `.env` file: `DB_USERNAME`, `DB_PASSWORD`, and `DB_NAME`. You can

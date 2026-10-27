@@ -30,6 +30,7 @@ If you're new to our project and looking for some way to make your first contrib
 ## Requirements
 
 For your contribution to be accepted:
+
 - [x] You must have signed the [Contributor License Agreement (CLA)](https://cla.salesforce.com/sign-cla).
 - [x] The test suite must be complete and pass.
 - [x] The changes must be approved by code review.

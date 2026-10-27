@@ -34,6 +34,7 @@ socioeconomic status, or other similar personal characteristics.
 
 Examples of behavior that contributes to creating a positive environment
 include:
+
 - Using welcoming and inclusive language
 - Being respectful of differing viewpoints and experiences
 - Gracefully accepting constructive criticism
@@ -41,6 +42,7 @@ include:
 - Showing empathy toward other community members
 
 Examples of unacceptable behavior by participants include:
+
 - The use of sexualized language or imagery and unwelcome sexual attention or
   advances
 - Personal attacks, insulting/derogatory comments, or trolling
