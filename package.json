@@ -24,11 +24,11 @@
   },
   "dependencies": {
     "@slack/bolt": "^5.1.0",
-    "dotenv": "^18.0.8",
-    "mongoose": "^9.11.2"
+    "dotenv": "^18.0.9",
+    "mongoose": "^9.11.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.15",
+    "@biomejs/biome": "^2.6.3",
     "ngrok": "^4.3.3"
   }
 }
