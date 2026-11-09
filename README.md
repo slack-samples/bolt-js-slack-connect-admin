@@ -70,6 +70,7 @@ npx skills add slackapi/slack-skills-plugin -y -a opencode
 ## App Configuration
 
 Before getting started, make sure you have a development workspace where you have permissions to install apps. If you don’t have one setup, go ahead and [create one](https://slack.com/create).
+
 ## Installation
 
 #### Create a Slack App
@@ -152,6 +153,7 @@ Great job! You're now ready to install the app using Slack's OAuth process.
 Follow the steps below based on if you plan to use Ngrok or Glitch as a way to host your app. Either will work.
 
 If you are using [Ngrok](www.ngrok.com), make sure you have started up ngrok, and have updated your app with the ngrok forwarding address in the following places:
+
 1. Update your event subscriptions request URL. It should look like the following: `https://3cb89939.ngrok.io/slack/events`. Save this.
 2. Update your interactivity request URL. It should look like the following: `https://3cb89939.ngrok.io/slack/events`. Save this.
 3. Go to OAuth & Permissions -> Redirect URLs. Add a new redirect URL. It should look like the following: `https://3cb89939.ngrok.io/slack/oauth_redirect`. Save the URL.
@@ -171,8 +173,8 @@ The base URL will always we different, based on if you are using Ngrok or Glitch
 
 [![Install App via OAuth](https://user-images.githubusercontent.com/10428517/154159350-3e5ab314-d9f9-4c38-8d8a-122751d1cc51.png)](https://user-images.githubusercontent.com/10428517/155203611-ffa7b69a-9b6d-40d1-a33e-9ba622c0dfcf.mov)
 
-
 Next, navigate to your install endpoint. Since we are using Bolt, this endpoint is automatically created for us from the Bolt package.
+
 1. If you are using Glitch (and assuming your app is hosted at `https://bolt-template-slack-connect.glitch.me`), you can navigate to `https://bolt-template-slack-connect.glitch.me/slack/install`
    If you are using Ngrok, it should look something like `https://3cb89939.ngrok.io/slack/install`
 2. Click on the `Add to Slack` button.
@@ -180,7 +182,6 @@ Next, navigate to your install endpoint. Since we are using Bolt, this endpoint 
 4. Click on the green `Allow` button.
 5. You will be redirected to the Redirect URL. Click on "Open Slack".
 6. Once you click on "Open Slack" your browser, you will be taken to the messages tab of your new Slack Connect Admin app! 🎉
-
 
 ## Step 3. Add the App to a Channel
 
@@ -228,7 +229,6 @@ Leave the rest of the sections blank and click on Invite. Lastly, click on View 
 ## Step 6. (Optional) Create Custom Slack Connect Settings to Never Require Approval
 
 [![sendInvite](https://user-images.githubusercontent.com/10428517/155223135-f9f6a0fd-4e93-4494-bb73-feddbbb09170.png)](https://user-images.githubusercontent.com/10428517/170152824-80389b26-54da-48c4-9547-bb7215369bc1.mov)
-
 
 Now - if you've also created special rules in the Admin console of your
 Grid Organization, you can have it so that any accepted invite will be
