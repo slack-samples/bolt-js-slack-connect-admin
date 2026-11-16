@@ -9,6 +9,12 @@
     }
   },
   "files": {
+    "includes": [
+      "**",
+      "!.agents/skills",
+      "!.claude/skills",
+      "!skills-lock.json"
+    ],
     "ignoreUnknown": false
   },
   "formatter": {
